@@ -1,0 +1,21 @@
+-- Index for searching by city/state
+CREATE INDEX idx_multiplex_city_state ON Multiplex(city, state);
+
+-- Foreign key index on Theater
+CREATE INDEX idx_theater_multiplexid ON Theater(multiplexID);
+
+-- Improve join performance on RoomNumber and Theater
+CREATE INDEX idx_roomnumber_theaterid ON RoomNumber(theaterID);
+
+-- Index for searching movies by title or genre
+CREATE INDEX idx_movie_title ON Movie(movieTitle);
+CREATE INDEX idx_movie_genre ON Movie(genre);
+
+-- Index for queries relating to movies and tickets
+CREATE INDEX idx_ticket_movieid ON Ticket(movieID);
+
+-- Indexing composite keys on junction table
+CREATE INDEX idx_tmts_roomid ON Theater_Movie_TimeSlot(roomID);
+CREATE INDEX idx_tmts_movieid ON Theater_Movie_TimeSlot(movieID);
+CREATE INDEX idx_tmts_timeslotid ON Theater_Movie_TimeSlot(timeSlotID);
+CREATE INDEX idx_tmts_composite ON Theater_Movie_TimeSlot(movieID, timeSlotID, roomID);

@@ -1,0 +1,66 @@
+/* We checked the CRUD operatins by these Queries.*/
+
+-- Selecting Muliplexes in California. Liminting to 10 for readability.
+
+Select * from Multiplex WHERE state = 'CA' LIMIT 10;
+
+-- Selecting total number of movies by genre.
+
+SELECT genre, COUNT(*) AS total_movies 
+FROM Movie 
+GROUP BY genre 
+ORDER BY total_movies DESC;
+
+-- Upading the table by inserting new movies
+
+INSERT INTO Movie (movieID, movieTitle, genre, rating) 
+VALUES (201, 'Ra-1', 'Sci-Fi', 'PG-13'),
+       (202, 'Saajan', 'Romance', 'PG-13'),
+       (203, 'Dabaang', 'Action', 'PG-13');
+
+-- Checking
+
+SELECT * FROM Movie WHERE movieID = 201;
+
+SELECT * FROM Movie WHERE genre = 'Sci-Fi';
+
+-- Selecting movies by different attributes
+
+SELECT * FROM Movie WHERE genre = 'Sci-Fi' LIMIT 10;
+
+SELECT * FROM Movie WHERE rating = 'PG-13' LIMIT 10;
+
+-- Upading the table by changing the attributes
+
+SELECT * FROM Movie WHERE movieTitle = 'The Revenant' LIMIT 1;
+
+UPDATE Movie 
+SET genre = 'Drama' 
+WHERE movieTitle = 'The Revenant';
+
+SELECT * FROM Movie WHERE movieTitle = 'The Revenant' LIMIT 1;
+
+
+-- Update multiple movies' ratings
+
+SELECT * FROM Movie WHERE genre = 'Crime';
+
+UPDATE Movie 
+SET rating = 'R' 
+WHERE genre = 'Crime';
+
+SELECT * FROM Movie WHERE genre = 'Crime';
+
+--Deleting the movie
+
+SELECT * FROM Movie WHERE movieTitle = 'The Dark Knight';
+
+
+DELETE FROM Ticket WHERE movieID IN (SELECT movieID FROM Movie WHERE movieTitle = 'The Dark Knight');
+DELETE FROM Movie WHERE movieTitle = 'The Dark Knight';
+
+--Confirming
+
+SELECT * FROM Movie WHERE movieTitle = 'The Dark Knight';
+
+

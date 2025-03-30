@@ -1,0 +1,56 @@
+-- Use these commands to monitor the performance of the database
+
+-- Shows queries that are currently running
+SELECT * FROM pg_stat_activity
+
+-- Tracks query statistics, but must be enabled beforehand
+CREATE EXTENSION pg_stat_statements;
+-- Edit the postgresql.conf file to enable:
+-- shared_preload_libraries = 'pg_stat_statements'
+SELECT * FROM pg_stat_statements ORDER BY total_exec_time DESC LIMIT 10;
+-- or, for more readable results:
+SELECT 
+  query,
+  calls,
+  total_exec_time,
+  mean_exec_time,
+  rows
+FROM pg_stat_statements
+ORDER BY total_exec_time DESC
+LIMIT 10;
+
+-- Review table-level statistics such as indexes and scans
+SELECT relname, seq_scan, idx_scan FROM pg_stat_user_tables;
+
+-- To review lock information
+SELECT * FROM pg_locks WHERE NOT granted;
+
+-- For testing and benchmarking, use EXPLAIN ANALYZE with a query
+-- Displays sequential vs index scan, time per step in the query, and rows processed
+EXPLAIN ANALYZE SELECT * FROM your_table WHERE ...;
+
+-- Performance test queries
+-- Get number of tickets sold for The Dark Knight
+SELECT COUNT(*) AS tickets_sold
+FROM Ticket t
+JOIN Movie m ON t.movieID = m.movieID
+WHERE m.movieTitle = 'The Dark Knight';
+
+-- What are the top five multiplexes by ticket sales numbers
+SELECT m.multiplexID,
+       m.streetAddress,
+       m.city,
+       m.state,
+       COUNT(t.ticketNumber) AS total_tickets
+FROM Ticket t
+JOIN Movie mo ON t.movieID = mo.movieID
+JOIN Theater_Movie_TimeSlot tmts ON mo.movieID = tmts.movieID
+JOIN RoomNumber r ON tmts.roomID = r.roomID
+JOIN Theater th ON r.theaterID = th.theaterID
+JOIN Multiplex m ON th.multipleXID = m.multiplexID
+GROUP BY m.multiplexID, m.streetAddress, m.city, m.state
+ORDER BY total_tickets DESC
+LIMIT 5;
+
+
+

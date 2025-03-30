@@ -1,0 +1,14 @@
+# This script is for setting up logging to track slow queries, errors, and general activity
+
+#!/bin/bash
+
+cd /etc/postgresql/17/main
+nano postgresql.conf
+
+# log_min_duration_statement = 500  # logs queries taking longer than 500ms
+# log_statement = 'none'           # or 'ddl', 'mod', etc.
+# log_checkpoints = on
+# log_connections = on
+# log_disconnections = on
+# log_lock_waits = on
+

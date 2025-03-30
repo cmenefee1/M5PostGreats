@@ -1,0 +1,201 @@
+movieID,movieTitle,genre,rating
+1,Inception,Sci-Fi,PG-13
+2,Titanic,Romance,PG-13
+3,The Matrix,Sci-Fi,R
+4,The Godfather,Crime,R
+5,The Dark Knight,Action,PG-13
+6,Pulp Fiction,Crime,R
+7,Forrest Gump,Drama,PG-13
+8,Fight Club,Drama,R
+9,Interstellar,Sci-Fi,PG-13
+10,The Shawshank Redemption,Drama,R
+11,Gladiator,Action,R
+12,Jurassic Park,Adventure,PG-13
+13,Avatar,Sci-Fi,PG-13
+14,The Avengers,Action,PG-13
+15,Toy Story,Animation,G
+16,The Lion King,Animation,G
+17,Star Wars,Sci-Fi,PG-13
+18,The Lord of the Rings,Fantasy,PG-13
+19,The Silence of the Lambs,Thriller,R
+20,Schindler's List,Biography,R
+21,The Departed,Crime,R
+22,Saving Private Ryan,War,R
+23,The Green Mile,Drama,R
+24,The Prestige,Mystery,PG-13
+25,Django Unchained,Western,R
+26,The Wolf of Wall Street,Biography,R
+27,The Social Network,Drama,PG-13
+28,Mad Max: Fury Road,Action,R
+29,Whiplash,Drama,R
+30,La La Land,Musical,PG-13
+31,The Grand Budapest Hotel,Comedy,R
+32,No Country for Old Men,Thriller,R
+33,The Truman Show,Drama,PG
+34,Black Swan,Psychological,R
+35,Gravity,Sci-Fi,PG-13
+36,The Revenant,Adventure,R
+37,Blade Runner 2049,Sci-Fi,R
+38,Get Out,Horror,R
+39,Parasite,Thriller,R
+40,Joker,Crime,R
+41,Doctor Strange,Fantasy,PG-13
+42,Iron Man,Action,PG-13
+43,Spider-Man: No Way Home,Action,PG-13
+44,Deadpool,Comedy,R
+45,Logan,Action,R
+46,The Batman,Crime,PG-13
+47,Dune,Sci-Fi,PG-13
+48,Everything Everywhere All at Once,Sci-Fi,R
+49,Top Gun: Maverick,Action,PG-13
+50,Oppenheimer,Biography,R
+51,Inception,Sci-Fi,PG-13
+52,Titanic,Romance,PG-13
+53,The Matrix,Sci-Fi,R
+54,The Godfather,Crime,R
+55,The Dark Knight,Action,PG-13
+56,Pulp Fiction,Crime,R
+57,Forrest Gump,Drama,PG-13
+58,Fight Club,Drama,R
+59,Interstellar,Sci-Fi,PG-13
+60,The Shawshank Redemption,Drama,R
+61,Gladiator,Action,R
+62,Jurassic Park,Adventure,PG-13
+63,Avatar,Sci-Fi,PG-13
+64,The Avengers,Action,PG-13
+65,Toy Story,Animation,G
+66,The Lion King,Animation,G
+67,Star Wars,Sci-Fi,PG-13
+68,The Lord of the Rings,Fantasy,PG-13
+69,The Silence of the Lambs,Thriller,R
+70,Schindler's List,Biography,R
+71,The Departed,Crime,R
+72,Saving Private Ryan,War,R
+73,The Green Mile,Drama,R
+74,The Prestige,Mystery,PG-13
+75,Django Unchained,Western,R
+76,The Wolf of Wall Street,Biography,R
+77,The Social Network,Drama,PG-13
+78,Mad Max: Fury Road,Action,R
+79,Whiplash,Drama,R
+80,La La Land,Musical,PG-13
+81,The Grand Budapest Hotel,Comedy,R
+82,No Country for Old Men,Thriller,R
+83,The Truman Show,Drama,PG
+84,Black Swan,Psychological,R
+85,Gravity,Sci-Fi,PG-13
+86,The Revenant,Adventure,R
+87,Blade Runner 2049,Sci-Fi,R
+88,Get Out,Horror,R
+89,Parasite,Thriller,R
+90,Joker,Crime,R
+91,Doctor Strange,Fantasy,PG-13
+92,Iron Man,Action,PG-13
+93,Spider-Man: No Way Home,Action,PG-13
+94,Deadpool,Comedy,R
+95,Logan,Action,R
+96,The Batman,Crime,PG-13
+97,Dune,Sci-Fi,PG-13
+98,Everything Everywhere All at Once,Sci-Fi,R
+99,Top Gun: Maverick,Action,PG-13
+100,Oppenheimer,Biography,R
+101,Inception,Sci-Fi,PG-13
+102,Titanic,Romance,PG-13
+103,The Matrix,Sci-Fi,R
+104,The Godfather,Crime,R
+105,The Dark Knight,Action,PG-13
+106,Pulp Fiction,Crime,R
+107,Forrest Gump,Drama,PG-13
+108,Fight Club,Drama,R
+109,Interstellar,Sci-Fi,PG-13
+110,The Shawshank Redemption,Drama,R
+111,Gladiator,Action,R
+112,Jurassic Park,Adventure,PG-13
+113,Avatar,Sci-Fi,PG-13
+114,The Avengers,Action,PG-13
+115,Toy Story,Animation,G
+116,The Lion King,Animation,G
+117,Star Wars,Sci-Fi,PG-13
+118,The Lord of the Rings,Fantasy,PG-13
+119,The Silence of the Lambs,Thriller,R
+120,Schindler's List,Biography,R
+121,The Departed,Crime,R
+122,Saving Private Ryan,War,R
+123,The Green Mile,Drama,R
+124,The Prestige,Mystery,PG-13
+125,Django Unchained,Western,R
+126,The Wolf of Wall Street,Biography,R
+127,The Social Network,Drama,PG-13
+128,Mad Max: Fury Road,Action,R
+129,Whiplash,Drama,R
+130,La La Land,Musical,PG-13
+131,The Grand Budapest Hotel,Comedy,R
+132,No Country for Old Men,Thriller,R
+133,The Truman Show,Drama,PG
+134,Black Swan,Psychological,R
+135,Gravity,Sci-Fi,PG-13
+136,The Revenant,Adventure,R
+137,Blade Runner 2049,Sci-Fi,R
+138,Get Out,Horror,R
+139,Parasite,Thriller,R
+140,Joker,Crime,R
+141,Doctor Strange,Fantasy,PG-13
+142,Iron Man,Action,PG-13
+143,Spider-Man: No Way Home,Action,PG-13
+144,Deadpool,Comedy,R
+145,Logan,Action,R
+146,The Batman,Crime,PG-13
+147,Dune,Sci-Fi,PG-13
+148,Everything Everywhere All at Once,Sci-Fi,R
+149,Top Gun: Maverick,Action,PG-13
+150,Oppenheimer,Biography,R
+151,Inception,Sci-Fi,PG-13
+152,Titanic,Romance,PG-13
+153,The Matrix,Sci-Fi,R
+154,The Godfather,Crime,R
+155,The Dark Knight,Action,PG-13
+156,Pulp Fiction,Crime,R
+157,Forrest Gump,Drama,PG-13
+158,Fight Club,Drama,R
+159,Interstellar,Sci-Fi,PG-13
+160,The Shawshank Redemption,Drama,R
+161,Gladiator,Action,R
+162,Jurassic Park,Adventure,PG-13
+163,Avatar,Sci-Fi,PG-13
+164,The Avengers,Action,PG-13
+165,Toy Story,Animation,G
+166,The Lion King,Animation,G
+167,Star Wars,Sci-Fi,PG-13
+168,The Lord of the Rings,Fantasy,PG-13
+169,The Silence of the Lambs,Thriller,R
+170,Schindler's List,Biography,R
+171,The Departed,Crime,R
+172,Saving Private Ryan,War,R
+173,The Green Mile,Drama,R
+174,The Prestige,Mystery,PG-13
+175,Django Unchained,Western,R
+176,The Wolf of Wall Street,Biography,R
+177,The Social Network,Drama,PG-13
+178,Mad Max: Fury Road,Action,R
+179,Whiplash,Drama,R
+180,La La Land,Musical,PG-13
+181,The Grand Budapest Hotel,Comedy,R
+182,No Country for Old Men,Thriller,R
+183,The Truman Show,Drama,PG
+184,Black Swan,Psychological,R
+185,Gravity,Sci-Fi,PG-13
+186,The Revenant,Adventure,R
+187,Blade Runner 2049,Sci-Fi,R
+188,Get Out,Horror,R
+189,Parasite,Thriller,R
+190,Joker,Crime,R
+191,Doctor Strange,Fantasy,PG-13
+192,Iron Man,Action,PG-13
+193,Spider-Man: No Way Home,Action,PG-13
+194,Deadpool,Comedy,R
+195,Logan,Action,R
+196,The Batman,Crime,PG-13
+197,Dune,Sci-Fi,PG-13
+198,Everything Everywhere All at Once,Sci-Fi,R
+199,Top Gun: Maverick,Action,PG-13
+200,Oppenheimer,Biography,R

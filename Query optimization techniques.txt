@@ -1,0 +1,61 @@
+#### Some Query optimization techniques
+
+-- If movieTitle is searched often, we can create an index
+
+CREATE INDEX idx_movie_title ON Movie (movieTitle);
+
+
+### If we filter by genre frequently, we can create an index
+
+CREATE INDEX idx_movie_genre ON Movie (genre);
+
+### Use of Composite Indexes for Multiple Conditions
+### If queries frequently involve genre + rating, we can use a composite index
+
+CREATE INDEX idx_movie_genre_rating ON Movie (genre, rating);
+
+##This will speeds up query.
+
+SELECT * FROM Movie WHERE genre = 'Action' AND rating = 'PG-13';
+
+### Check Index Usage with
+
+EXPLAIN ANALYZE SELECT * FROM Movie WHERE movieTitle = 'Inception';
+
+EXPLAIN ANALYZE SELECT * FROM Movie WHERE genre = 'Action' AND rating = 'PG-13';
+
+### Avoid SELECT *, Specify Only Required Columns
+### This is Bad Query (Slow)
+
+SELECT * FROM Movie;
+
+
+### This is an Optimized Query
+
+SELECT movieTitle, genre FROM Movie;
+
+
+### We can Use EXPLAIN ANALYZE to Debug Slow Queries
+### Before optimizing,  we must analyze our queries
+
+EXPLAIN ANALYZE SELECT * FROM Ticket WHERE movieID = 10;
+
+### Use of JOIN Instead of Subqueries is Bad Query (Slow Subquery)
+
+SELECT * FROM Movie WHERE movieID IN (SELECT movieID FROM Ticket);
+
+EXPLAIN ANALYZE SELECT * FROM Movie WHERE movieID IN (SELECT movieID FROM Ticket);
+
+### Thsi is the Optimized Query (Use JOIN)
+
+SELECT m.*
+FROM Movie m
+JOIN Ticket t ON m.movieID = t.movieID;
+
+EXPLAIN ANALYZE SELECT m.*
+FROM Movie m
+JOIN Ticket t ON m.movieID = t.movieID;
+
+
+
+

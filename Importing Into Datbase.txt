@@ -1,0 +1,67 @@
+/*These Commands were used to insert data into the Datbase from the csv files. Thes files were genertated using AI to creat synthetic data.*/
+
+--Import into Table Movie
+
+
+\copy Movie(movieID, movieTitle, genre, rating) FROM 'movies.csv' DELIMITER ',' CSV HEADER;
+
+--Checking
+
+SELECT * FROM Movie LIMIT 10;
+
+--Import into  Table Ticket
+
+\copy Ticket(ticketNumber, movieID, customerType, price) FROM 'ticket.csv' DELIMITER ',' CSV HEADER;
+
+--Checking
+
+SELECT * FROM Ticket LIMIT 10;
+
+--Import into Table Multiplex
+
+\copy Multiplex(multiplexID, streetAddress, city, state, zip) FROM 'multiplex.csv' DELIMITER ',' CSV HEADER;
+
+--Checking
+
+SELECT * FROM Multiplex LIMIT 10;
+
+
+--Import into Table Theater
+
+\copy Theater(theaterID, multiplexID, theaterName) FROM 'theater.csv' DELIMITER ',' CSV HEADER;
+
+--Checking
+
+SELECT * FROM Theater LIMIT 10;
+
+
+--Import into Table RoomNumber
+
+\copy RoomNumber(roomID, theaterID, seatingCapacity, screenType
+) FROM 'room_number.csv' DELIMITER ',' CSV HEADER;
+
+--Checking
+
+
+SELECT * FROM RoomNumber LIMIT 10;
+
+--Import into Table TimeSlot
+
+\copy TimeSlot(timeSlotID, startTime, duration) FROM 'time_slot.csv' DELIMITER ',' CSV HEADER;
+
+--Checking 
+
+SELECT * FROM TimeSlot LIMIT 10;
+
+--Import into Theater_Movie_TimeSlot
+
+-- already inserted
+
+--Checking 
+
+SELECT * FROM Theater_Movie_TimeSlot LIMIT 10;
+
+
+
+
+
